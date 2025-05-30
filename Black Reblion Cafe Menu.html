@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Black Rebellion Cafe</title>
-    <link rel="icon" type="image/x-icon" href="Zero.jpg">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/f4/37/a3/f437a31cc42b8c8e63e4107184758cd1.jpg">
 
     <style>
         body {
             background-color: #0A0A0A;
-            color: #000;
+            color: #F0F0F0;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         .centered {
-            max-width: fit-content;
-            margin: 1rem auto;
+            max-width: 80%;
+            margin: 1.5rem auto;
         }
 
         .cafe-photo {
-            border: 8px solid #ffffff;
-            border-radius: 8px;
+            border: 9px solid #ffffff;
+            border-radius: 9px;
         }
 
         .greeting {
@@ -31,6 +31,7 @@
             background-color: white;
             text-align: center;
             text-shadow: 2px 2px rgb(207, 195, 160);
+            color: #000;
         }
 
         .menu-box {
@@ -38,29 +39,65 @@
             border-radius: 22px;
             padding: 20px;
             background-color: white;
-            margin-top: 2rem;
+            color: #000;
         }
 
-        h1, h4 {
-            margin: 0 0 10px 0;
+        .menu-box h4 {
             text-align: center;
+            color: #000000;
         }
 
-        p {
-            text-align: center;
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu-image {
+            margin-right: 15px;
+        }
+
+        .menu-image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .menu-text {
+            flex-grow: 1;
+        }
+
+        .item-title {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .item-desc {
+            margin: 5px 0 0 0;
+            font-size: 0.95rem;
+        }
+
+        .price {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #000000;
+            min-width: 60px;
+            text-align: right;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <nav>
-            
-        </nav>
+        <nav></nav>
     </header>
 
     <div class="centered cafe-photo" id="Cafe-Photo">
-        <img src="https://i.pinimg.com/736x/48/c9/70/48c970e931cd3ed0a904a9cf1b0ee029.jpg" width="800" height="400" alt="Cafe Image">
+        <img src="https://cdna.artstation.com/p/assets/images/images/047/142/060/original/darius-anton-coffee-01.gif?1646856903c" width="800" height="400" alt="Cafe Image">
     </div>
 
     <div class="centered greeting" id="Menugreeting">
@@ -69,12 +106,61 @@
 
     <div class="centered menu-box" id="Menu-background">
         <h4><b>Menu</b></h4>
-        <p>
-        <h3>Zero's Espresso Shot</h3>
-        	Strong, bold, no-nonsense for the leader in you
-        </p>
-        <p></p>
-        <h5>C.C Pizza Pocket</h5>
+
+        <div class="menu-item">
+            <div class="menu-image">
+                <img src="https://i.pinimg.com/originals/c7/16/9b/c7169b87b277a02f4963c5003e4e699e.gif" alt="espresso gif">
+            </div>
+            <div class="menu-text">
+                <p class="item-title">Zero's Espresso Shot</p>
+                <p class="item-desc">Strong, bold, no-nonsense for the leader in you.</p>
+            </div>
+            <div class="price">$3.50</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-image">
+                <img src="https://i.pinimg.com/originals/87/77/06/8777066ad51ace6886ba5467639d5512.gif" alt="pizza gif">
+            </div>
+            <div class="menu-text">
+                <p class="item-title">C.C. Pizza Pocket</p>
+                <p class="item-desc">Mini flatbread with cheese & basil.</p>
+            </div>
+            <div class="price">$5.00</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-image">
+                <img src="https://i.pinimg.com/736x/49/4f/c3/494fc34fc685672cf0056cff297d0d8c.jpg" alt="cake gif">
+            </div>
+            <div class="menu-text">
+                <p class="item-title">Lelouch's Chessboard Cake</p>
+                <p class="item-desc">Vanilla and chocolate squares with edible gold lines.</p>
+            </div>
+            <div class="price">$6.50</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-image">
+                <img src="https://i.pinimg.com/736x/0f/23/35/0f233572c7b016a2546fc2a4df2fdd4b.jpg" alt="mac gif">
+            </div>
+            <div class="menu-text">
+                <p class="item-title">Geass Macarons</p>
+                <p class="item-desc">Purple & red macarons with gold dust and Geass eye.</p>
+            </div>
+            <div class="price">$4.25</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-image">
+                <img src="https://i.pinimg.com/736x/6d/2c/df/6d2cdf77135d44b83d02b70ca15e9893.jpg" alt="croissants gif">
+            </div>
+            <div class="menu-text">
+                <p class="item-title">Knights of the Round Croissants</p>
+                <p class="item-desc">Flaky croissants in a circle, served in 7s like the knights.</p>
+            </div>
+            <div class="price">$7.00</div>
+        </div>
     </div>
 
 </body>
